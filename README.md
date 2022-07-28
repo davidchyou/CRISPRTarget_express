@@ -14,6 +14,8 @@ The BED6 file can be used to extract the target sequences and the flanking regio
 
 The application CRISPRTarget_lite is a Shell script. The user need to specify the path to a CRISPR-array file in CRISPRDetect-GFF format, and a database of genomic sequences in BLASTDB format. Spacer target data will be printed to 'stdout' by default, but can also be directed into a file.
 
+Depending on the organisms, if CRISPR arrays are likely to be present, one should predict CRISPR arrays first (using CRISPRDetect, or fast predictors like MINCED) and then mask them out before creating the BLASTDB. This is to avoid false targets due to self-matches. 
+
 Note that CRISPRTarget_lite is a "Linux one-liner", made of just one Linux command!
 
 Commands:
