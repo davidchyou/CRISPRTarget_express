@@ -24,6 +24,7 @@ The only dependency is the application BLASTN, which is provided, and the script
 **More information**
 
 The application CRISPRTarget_lite runs the following BLASTN command:
+
         blastn -query <spacers.fna> -db <blast_db> -num_threads <a_number> -outfmt '6 sseqid stitle sstart send qseqid qstart qend sstrand length evalue mismatch gaps qlen slen' -word_size 7 -evalue 1 -gapopen 10 -gapextend 2 -penalty -1 -reward 1 -dbsize 1000000000
         
 In particular, sequence alignment is performed with the same set of command-line argumented used by CRISPRTarget by default. The BLASTN command generates a tabular output, and the query length (i.e. the spacer length) is requested by asking for the 'qlen' data. The number of mismatches is also requested. In this way, we have everything for :
