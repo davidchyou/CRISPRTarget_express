@@ -23,6 +23,8 @@ Commands:
 
 The only dependency is the application BLASTN, which is provided, and the script is pointing to it.
 
+In the BED6 output, column 4 (the "name" column) is formatted as "genome_accession#spacer_id#count", where the "count" is a series of integer that makes all the names unique. Bedtools uses the name field as FASTA header when extracting sequences. 
+
 **More information**
 
 The application CRISPRTarget_lite runs the following BLASTN command:
