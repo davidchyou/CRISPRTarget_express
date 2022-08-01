@@ -1,6 +1,6 @@
 # CRISPRTarget_lite
 
-**What it does**
+**What it does?**
 
 Genomes targeted by CRISPR spacers can be identified by sequence alignment. The highly-cited web-application CRISPRTarget does exactly this job. CRISPRTarget uses the application BLASTN to align spacers to genomic sequences, compute spacer-match scores by incrementing every nucleotide match by 1 and decrementing every mismatch by 1. Because BLASTN is a local-alignment tool, there will be unaligned nucleotides at the end of CRISPR spacer (i.e. unaligned free ends), and these nucleotides were treated as mismatches. Similarly, when reporting the spacer targets, the start-end of each target were extended to cover unaligned free ends of the spacer. CRISPRTarget generates graphical HTML outputs with URLs link to websites hosting the targeted sequences, as well as scoring for known PAMs. 
 
