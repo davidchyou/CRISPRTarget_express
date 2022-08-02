@@ -12,9 +12,9 @@ The BED6 file can be used to extract the target sequences and the flanking regio
 
 **Dependencies**
 
--BLASTN (provided)
--Linux-like environment 
--Bedtools (not a dependency, but useful for manipulating the BED6 output)
+- BLASTN (provided)
+- Linux-like environment 
+- Bedtools (not a dependency, but useful for manipulating the BED6 output)
 
 **General usage**
 
