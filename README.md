@@ -1,4 +1,4 @@
-# CRISPRTarget_lite
+# CRISPRTarget_express
 
 **What it does**
 
