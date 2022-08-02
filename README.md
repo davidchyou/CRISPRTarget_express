@@ -58,7 +58,8 @@ By analyzing the problem mathematically first and trying to be patient with the 
 
 Yes, one is under development, and will be made available in the near future.
 
-References
+**References**
+
 Biswas, A., et al. (2015). "Computational Detection of CRISPR/crRNA Targets." Methods in Molecular Biology 1311: 77-89.DOI: 10.1007/978-1-4939-2687-9_5
 
 Biswas, A., et al. (2013). "CRISPRTarget: Bioinformatic prediction and analysis of crRNA targets." RNA biology 10(5): 817-827.DOI: 10.4161/rna.24046
