@@ -46,7 +46,7 @@ In particular, sequence alignment is performed with the same set of command-line
         strand = (alignment_start > alignment_end) ? - : +
         match_score = query_length - 2 * (mismatches + unaligned_5p_end + unaligned_3p_end)
         
-Because gap opening and gap extension are heavily penalized, the alignment is essentially gap-free, and chances are that we will never see gaps in the alignment. In the very rare cases where gaps does show up, matching to a gap is also considered as a mismatches. Knowing that each gap extends the alognment by one nucleotide, we can request for the number of gap and adjust the match score:
+Because gap opening and gap extension are heavily penalized, the alignment is essentially gap-free, and chances are that we will never see gaps in the alignment. In the very rare cases where gaps do show up, matching to a gap is also considered as a mismatch. Knowing that each gap extends the alignment by one nucleotide, we can request for the number of gap and adjust the match score:
 
         alignment_length = query_length + gaps
         match_score = alignment_length - 2 * (mismatches + unaligned_5p_end + unaligned_3p_end + gaps)
@@ -54,15 +54,15 @@ Because gap opening and gap extension are heavily penalized, the alignment is es
         
 By analyzing the problem mathematically first and trying to be patient with the rather complicated BLASTN user manual, we can build a Linux command that solves a seemingly complicated problem!
 
-**Is there a command-line version of "the" orgiginal CRISPRTarget?**
+**Is there a command-line version of "the" original CRISPRTarget?**
 
 Yes, one is under development, and will be made available in the near future.
 
 **References**
 
-Biswas, A., et al. (2015). "Computational Detection of CRISPR/crRNA Targets." Methods in Molecular Biology 1311: 77-89.DOI: 10.1007/978-1-4939-2687-9_5
+Biswas, A., et al. (2015). Computational Detection of CRISPR/crRNA Targets. Methods in Molecular Biology 1311: 77-89.DOI: 10.1007/978-1-4939-2687-9_5
 
-Biswas, A., et al. (2013). "CRISPRTarget: Bioinformatic prediction and analysis of crRNA targets." RNA biology 10(5): 817-827.DOI: 10.4161/rna.24046
+Biswas, A., et al. (2013). CRISPRTarget: Bioinformatic prediction and analysis of crRNA targets. RNA biology 10(5): 817-827.DOI: 10.4161/rna.24046
 	
 
 
